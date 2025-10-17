@@ -8,11 +8,13 @@ export default function page() {
 
            <div className=" ">
         <Container>
-            <div className="flex justify-center  px-2.5 sm:px-4 md:px-[auto] min-h-screen ">
-                <div className="w-3/5 hidden md:block bg-amber-400 bg-auth ">
-                
+            <div className="flex justify-center gap-5  min-h-screen shadow  rounded-2xl overflow-hidden">
+                <div className="w-3/5 hidden md:flex  bg-auth py-4 items-end ">
+                     <div className="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                     </div>
                 </div>
-                <div className="md:w-2/5 w-full bg-black p-8 flex flex-col justify-center items-center  ">
+                <div className="md:w-2/5 w-full  p-8 flex flex-col justify-center items-center  ">
                 <SignIn />
                 </div>
             </div>

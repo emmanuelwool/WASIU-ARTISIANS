@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -31,8 +30,7 @@ const  SignIn = () => {
     };
 
     return (
-        <div>
-            <div className="">
+            <div className="w-full">
                 <div className="w-full">
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-full">
@@ -80,7 +78,6 @@ const  SignIn = () => {
                     </Form>
                 </div>
             </div>
-        </div>
     );
 };
 

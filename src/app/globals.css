@@ -125,5 +125,6 @@
 
 
 .bg-auth {
-  background: url('/mub.png');
+  background: url('/mub.png') no-repeat;
+  background-size: cover;
 }
