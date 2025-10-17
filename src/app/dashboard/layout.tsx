@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <div className="flex w-full">
           <LayoutSidebar />
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto">
           {children}
         </div>
         </div>

@@ -69,37 +69,37 @@ export const ProductSidebarNavigationMockData: Navtype[] = [
     {
         id: 2,
         title: "My Services (Gigs)", 
-        link: "/services",
+        link: "/dashboard/services",
         icon: FileText 
     },
     {
         id: 3,
         title: "Orders & Sales", 
-        link: "/orders",
+        link: "/dashboard/orders",
         icon: ShoppingCart
     },
     {
         id: 4,
         title: "Earnings & Payments",
-        link: "/earnings",
+        link: "/dashboard/earnings",
         icon: Wallet
     },
     {
         id: 5,
         title: "Messages",
-        link: "/inbox", 
+        link: "/dashboard/inbox", 
         icon: MessageSquare
     },
     {
         id: 6,
         title: "Reviews & Ratings", 
-        link: "/reviews",
+        link: "/dashboard/reviews",
         icon: Star
     },
     {
         id: 7,
         title: "Account Settings", 
-        link: "/settings",
+        link: "/dashboard/settings",
         icon: Settings
     }
 ]
