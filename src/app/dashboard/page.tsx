@@ -1,7 +1,10 @@
 import GraphComponents from "./_components/GraphComponents";
+import OrderRender from "./_components/orders/OrdersRender";
+import PayementRender from "./_components/payement/PayementRender";
 import Stat from "./_components/Stat";
+import { Suspense } from "react";
 
-export default function page() {
+export default async function page() {
     return (
         <>
            <div className="space-y-8">
@@ -11,6 +14,13 @@ export default function page() {
             </div>
             <Stat />
             {/* <GraphComponents /> */}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <PayementRender />
+                    <PayementRender />
+            </div>
+
+            <OrderRender />
            </div>
         </>
     )
