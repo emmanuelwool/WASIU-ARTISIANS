@@ -7,7 +7,12 @@ import { z } from "zod"
  * @property {string} firstname - The user's first name.
  * @property {string} password - The user's password.
  */
-export type SignUpType = {}
+export type SignUpType = {
+      email:string,
+    latstname:string,
+    firstname:string,
+    password:string,
+}
 
 
 /**
@@ -20,5 +25,8 @@ export type SignInType = {
     email:string,
     password:string,
 }
+
+
+
 
 export type SignInForm = z.infer<typeof SignInFormSchema>

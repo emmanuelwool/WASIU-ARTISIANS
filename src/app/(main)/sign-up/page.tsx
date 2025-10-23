@@ -2,18 +2,16 @@
 import Container from "@/components/shared/Container";
 import SignIn from "./_components/SignInForm";
 
-export default function page() {
-    return (
-        <>
-
-               <div className="min-h-screen py-8">
+export default function Page() {
+  return (
+    <div className="min-h-screen py-8">
       <Container>
         <div className="flex justify-center gap-0 min-h-[calc(100vh-4rem)] shadow-2xl rounded-3xl overflow-hidden bg-white">
           
           {/* Section Gauche - Image/Illustration */}
           <div className="w-3/5 hidden md:flex relative bg-gradient-to-br bg-auth py-12 px-12 items-end">
             {/* Pattern d'arrière-plan */}
-                <div className="absolute inset-0 bg-black/20"></div>
+            <div className="absolute inset-0 bg-black/20"></div>
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
               <div className="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full blur-3xl"></div>
@@ -21,7 +19,7 @@ export default function page() {
             </div>
             
             {/* Contenu */}
-           <div className="relative z-10 text-white">
+            <div className="relative z-10 text-white">
               <div className="mb-8">
                 <h1 className="text-4xl font-bold mb-4">
                     Welcome to <span className="text-yellow-300">Wassiu</span>
@@ -69,6 +67,5 @@ export default function page() {
         </div>
       </Container>
     </div>
-        </>
-    )
+  );
 }
