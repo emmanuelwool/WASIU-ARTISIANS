@@ -3,7 +3,6 @@ import OrderRender from "./_components/orders/OrdersRender";
 import PayementRender from "./_components/payement/PayementRender";
 import Stat from "./_components/Stat";
 import { Suspense } from "react";
-
 export default async function page() {
     return (
         <>
@@ -13,7 +12,7 @@ export default async function page() {
                 <p className="text-gray-500 font-light">Happy to see you grow up together</p>
             </div>
             <Stat />
-            {/* <GraphComponents /> */}
+             <GraphComponents /> 
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <PayementRender />

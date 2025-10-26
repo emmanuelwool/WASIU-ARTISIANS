@@ -1,10 +1,14 @@
-'use client'
-import PersonalInfo from "./_components/PersonalInfo/PersonalInfo";
+import OrderRender from "./_components/OrdersRender";
+import Stat from "./_components/Stat";
+import { ChartAreaInteractive } from "./charts";
 
-export default function page() {
-    return(
+export default function page(){
+    return (
         <>
-          <PersonalInfo />
+<div className="flex flex-col space-y-4 gap-4">
+    <ChartAreaInteractive />
+            <Stat />
+                      <OrderRender /></div>          
         </>
     )
 }

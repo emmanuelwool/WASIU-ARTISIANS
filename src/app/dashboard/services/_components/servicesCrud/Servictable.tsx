@@ -1,7 +1,8 @@
 'use client';
 import React from 'react';
 import { columns, Service } from "./columns";
-import { DataTable } from "./Data-table"
+import ServiceManagement from './Data-table';
+
 async function getData(): Promise<Service[]> {
   // Fetch data from your API here.
   return [
@@ -62,7 +63,7 @@ export default async function ServicesTable() {
     <>
     
      <div className="container mx-auto py-10">
-      <DataTable columns={columns} data={data} />
+      <ServiceManagement  data={data} />
     </div>
     </>
  )
