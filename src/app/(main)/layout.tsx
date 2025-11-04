@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import HomeNavbar from "@/components/shared/home/HomeNavbar";
+import HomeFooter from "@/components/shared/home/HomeFooter";
 
 
 export const metadata: Metadata = {
@@ -25,6 +26,8 @@ export default function RootLayout({
         <div className="container  mx-auto px-4 sm:px-6 lg:px-8">
           {children}
         </div>
+
+        <HomeFooter />
       </body>
     </html>
   );

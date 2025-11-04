@@ -138,7 +138,7 @@ const SignIn = () => {
             {/* 5. Le bouton de soumission doit avoir type='submit' */}
             <Button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 rounded-lg transition-colors shadow-sm hover:shadow-md"
+              className="w-full bg-[#7B1FA2] hover:bg-[#B388FF] text-white font-semibold py-6 rounded-lg transition-colors shadow-sm hover:shadow-md"
             >
               Sign up
             </Button>
@@ -150,7 +150,7 @@ const SignIn = () => {
               Dif you have accout ?{" "}
               <a
                 href="/sign-in"
-                className="text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+                className="text-[#7B1FA2] hover:text-[#B388FF] font-semibold transition-colors"
               >
                 Sign-up
               </a>

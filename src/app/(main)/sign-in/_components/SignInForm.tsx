@@ -11,7 +11,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { SignInFormSchema } from "@/schema/AuthFormSchema";
 import { SignInForm, SignInType } from "@/types/AuthTypes";
-import { Google } from "@/components/ui/svgs/google";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
@@ -90,7 +89,7 @@ const SignIn = () => {
             {/* Bouton de soumission */}
             <Button 
               type="submit" 
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-6 rounded-lg transition-colors shadow-sm hover:shadow-md"
+              className="w-full bg-[#7B1FA2] hover:bg-[#B388FF] text-white font-semibold py-6 rounded-lg transition-colors shadow-sm hover:shadow-md"
             >
               Sign in
             </Button>
@@ -101,7 +100,7 @@ const SignIn = () => {
               Don't have an account?{" "}
               <Link
                 href="/sign-up"
-                className="text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+                className="text-[#7B1FA2] hover:text-[#B388FF] font-semibold transition-colors"
               >
                 Sign up
               </Link>
