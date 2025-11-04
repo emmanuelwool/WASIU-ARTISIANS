@@ -73,7 +73,7 @@ const PopularServices = () => {
           {mostPopulartServece.map((popularService, index) => (
             <div 
               key={index} 
-              className="flex-shrink-0 w-64 bg-blue-500 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="flex-shrink-0 w-64 bg-[#C9D6B8] rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <div className="p-4">
                 <p className="font-bold text-xl text-white">{popularService.title}</p>

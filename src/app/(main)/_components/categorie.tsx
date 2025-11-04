@@ -76,7 +76,7 @@ const Categorie = () => {
                         <>
               <div key={category.id} className='flex flex-col items-center justify-center space-y-2.5 h-24 border hover:border-blue-200 duration-400  hover:transition-discrete hover:duration-200 border-blue-50  shadow rounded-md p-2'>
           {/* L'icône est maintenant un composant React */}
-          <category.icon size={14} className="text-blue-500" />
+          <category.icon size={14} className="text-[#7B1FA2]" />
           <span className='font-semibold text-xs'>{category.name}</span>
         </div>
                         </>

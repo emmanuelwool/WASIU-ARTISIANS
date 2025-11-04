@@ -2,6 +2,7 @@
 import { mostPopulartHired } from "@/mocks/AllMock";
 import React, { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const PopularHiring = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -72,9 +73,9 @@ const PopularHiring = () => {
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {mostPopulartHired.map((popularhiree, index) => (
-            <div
+            <Link href={popularhiree.id}
               key={index}
-              className="flex-shrink-0 w-64 bg-blue-500 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="flex-shrink-0 w-64 bg-[#C9D6B8] rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <img
                 src={popularhiree.img}
@@ -92,7 +93,7 @@ const PopularHiring = () => {
                   <p className="text-white text-xs">📍 {popularhiree.location}</p>
                 )}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

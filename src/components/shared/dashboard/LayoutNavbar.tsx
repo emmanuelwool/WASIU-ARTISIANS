@@ -31,7 +31,7 @@ const LayoutNavbar = () => {
   };
 
   return (
-    <div className='px-4 md:px-8 py-4 border-b border-gray-200 w-full bg-white shadow-sm'>
+    <div className='px-4 md:px-8 py-4 border-b bg-[#F9F7F3] border-gray-200 w-full  shadow-sm'>
       <div className="flex justify-between items-center container mx-auto">
         {/* Barre de recherche */}
         <div className="w-full max-w-md relative hidden md:block">

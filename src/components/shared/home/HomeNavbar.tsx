@@ -18,9 +18,7 @@ const HomeNavbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900">
-                Wa<span className="text-blue-600">ss</span>iu
-              </h1>
+            <img src="/logo.png" alt="logo" className='w-24 c'/>
             </Link>
           </div>
 
@@ -49,7 +47,7 @@ const HomeNavbar = () => {
               </Link>
               <Link
                 href="/sign-up"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium shadow-sm hover:shadow-md"
+                className= "text-white px-6 py-2 rounded-lg bg-[#7B1FA2] hover:bg-[#B388FF] hover:text-[#212121] transition-colors duration-200 font-medium shadow-sm hover:shadow-md"
               >
                 Sign-up
               </Link>
@@ -99,7 +97,7 @@ const HomeNavbar = () => {
             </Link>
             <Link
               href="/sign-up"
-              className="block w-full text-center py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-200 shadow-sm"
+              className="block w-full text-center py-2 px-4bg-[#7B1FA2] hover:bg-[#B388FF] hover:text-[#212121] rounded-lg  transition-all duration-200 shadow-sm"
               onClick={() => setIsMenuOpen(false)}
             >
               Sign-up

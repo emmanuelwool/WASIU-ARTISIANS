@@ -34,7 +34,7 @@ const LayoutSidebar = () => {
   return (
     <div className="relative">
       <div 
-        className={`bg-white flex flex-col justify-between min-h-screen rounded-2xl shadow-lg p-4 transition-all duration-300 ease-in-out ${
+        className={`bg-[#F9F7F3] flex flex-col justify-between min-h-screen rounded-2xl p-4 transition-all duration-300 ease-in-out ${
           isCollapsed ? 'w-20' : 'w-64'
         }`}
       >
@@ -46,7 +46,7 @@ const LayoutSidebar = () => {
                 isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100'
               }`}
             >
-              Wassiu
+              <img src="/logo.png" alt=""  className='w-24'/>
             </h1>
             <button
               onClick={toggleSidebar}
@@ -80,7 +80,7 @@ const LayoutSidebar = () => {
                   href={sideData.link}
                   className={`flex rounded-md items-center gap-3 px-3 py-3 transition-all duration-200 relative group ${
                     isActive 
-                      ? 'text-white bg-blue-500 shadow-md' 
+                      ? 'text-white bg-[#7B1FA2] shadow-md' 
                       : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
                   } ${isCollapsed ? 'justify-center' : ''}`}
                   title={isCollapsed ? sideData.title : ''}
